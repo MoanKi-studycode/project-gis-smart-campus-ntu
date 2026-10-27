@@ -1,0 +1,22 @@
+{
+  "name": "ntu-smart-campus-backend",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:apply-schema": "node src/init-db.js",
+    "db:reset": "node src/init-db.js --reset",
+    "db:seed": "node src/seed-db.js",
+    "db:test": "node scripts/test-db-connection.js",
+    "health": "node scripts/check-server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "pg": "^8.16.3"
+  }
+}

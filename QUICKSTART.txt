@@ -1,0 +1,61 @@
+# 🚀 QUICK START - NTU Smart Campus
+
+## ⚡ 5 Bước Chạy Dự Án
+
+### 1️⃣ Chuẩn Bị
+```bash
+# Cài Node.js 16+ và PostgreSQL
+node -v      # Check Node.js
+psql -V      # Check PostgreSQL
+```
+
+### 2️⃣ Tạo Database
+```bash
+# Mở PostgreSQL
+psql -U postgres
+CREATE DATABASE DB_SmartCampus;
+CREATE EXTENSION postgis;
+\q
+```
+
+### 3️⃣ Setup Backend
+```bash
+cd smart-campus/backend
+npm install
+node scripts/apply-migration.js
+```
+
+### 4️⃣ Chạy Backend
+```bash
+npm start
+# Server chạy: http://localhost:4000
+```
+
+### 5️⃣ Chạy Frontend (terminal mới)
+```bash
+cd smart-campus/frontend
+npm install
+npm run dev
+# Frontend: http://localhost:5173
+```
+
+---
+
+## 🔑 Đăng Nhập
+- **Admin**: `admin` / `123456`
+- **GV**: `gv001` / `123456`
+- **SV**: `sv001` / `123456`
+
+---
+
+## 📖 Chi Tiết
+Xem **README_VI.md** để hướng dẫn đầy đủ
+
+## 🔧 Cập Nhật Dữ Liệu
+```bash
+node scripts/update-course-data.js
+```
+
+---
+
+✅ Tất cả tệp cần thiết đã được chuẩn bị. Bắt đầu ngay!
